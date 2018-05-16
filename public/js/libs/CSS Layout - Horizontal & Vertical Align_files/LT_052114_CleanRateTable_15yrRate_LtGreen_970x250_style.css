@@ -1,0 +1,220 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#banner {
+  position: absolute;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  width: 968px;
+  height: 248px;
+  background: #e2f0d7;
+  border: 1px solid #ccc;
+  top: 0px;
+  left: 0px;
+  margin: auto;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  opacity: 0;
+}
+
+.panel {
+  position: absolute;
+  width: 300px;
+  height: 120px;
+  left: 350px;
+  opacity: 0;
+}
+
+h1 {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 400;
+  color: #448214;
+}
+
+h2 {
+  font-size: 80px;
+  text-align: center;
+  font-weight: 300;
+  color: #448214;
+}
+
+h3 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 300;
+  color: #448214;
+}
+
+span {
+    font-weight: 600;
+}
+
+#text1 {
+  top: 42px;
+}
+
+#text2 {
+  top: 65px;
+  left: -250px;
+}
+
+#text3 {
+  top: 146px;
+}
+
+#ratetable {
+	position: absolute;
+    left: 399px;
+    top: 12px;
+    z-index: 500;
+}
+
+.row {
+	position: absolute;
+    width: 558px;
+    height: 45px;
+    left: 600px;
+    opacity: 0;
+}
+
+.divider {
+    position: absolute;
+    width: inherit;
+    background-color: #bec3be;
+    height: 1px;
+    top: 44px;
+    z-index: 5;
+}
+
+.rowbg {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background: #e2f0d7;
+}
+
+.rowbgani {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    opacity: 0;
+    z-index: 1;
+    background-color: #64cbe5;
+}
+
+.rowbgover {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    opacity: 0;
+    z-index: 2;
+    background-color: #7ac142;
+}
+
+.tabletext {
+	position: absolute;
+    font-weight: 400;
+    color: #31353b;
+    font-size: 22px;
+    width: 510px;
+    top: 10px;
+    left: 24px;
+    z-index: 3;
+}
+.tabletext span {
+    font-weight: 400;
+    font-size: 17px;
+}
+
+#row2 {
+    top: 45px;
+}
+
+#row3 {
+    top: 90px;
+}
+
+#row4 {
+    top: 135px;
+}
+
+#row5 {
+    top: 180px;
+}
+
+#row5 .divider {
+    opacity: 0;
+}
+
+#ttext2, #ttext5, #ttext8, #ttext11, #ttext14 {
+    left: 52px;
+    text-align: center;
+}
+
+#ttext3, #ttext6, #ttext9, #ttext12, #ttext15 {
+    text-align: right;
+}
+
+#logo {
+	position: absolute;
+	width: 106px;
+	height: 25px;
+	left: 149px;
+	top: 7px;
+	background-image: url('LT_052114_CleanRateTable_15yrRate_LtGreen_970x250_logo.png');
+}
+
+#terms {
+	position: absolute;
+	width: 176px;
+	height: 9px;
+	left: 121px;
+	top: 237px;
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    color: #333;
+    opacity: 0.5;
+}
+
+#cta {
+	position: absolute;
+    overflow: hidden;
+	width: 274px;
+	height: 48px;
+	left: 62px;
+	bottom: -50px;
+	background-image: url('LT_052114_CleanRateTable_15yrRate_LtGreen_970x250_cta.png');
+    opacity: 0;
+    z-index: 3;
+}
+
+#shine {
+    position: absolute;
+    width: 200px;
+    height: 59px;
+    left: -220px;
+    background-image: url('LT_052114_CleanRateTable_15yrRate_LtGreen_970x250_shine.png');
+    background-size: cover;
+    z-index: 5;
+}
+
+/* Invisible button for background clickthrough. */
+#hit {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	cursor: pointer;
+	opacity: 0;
+	z-index: 400;
+}
